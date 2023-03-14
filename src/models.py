@@ -33,7 +33,7 @@ class Follower(Base):
     __tablename__ = "follower"
 
     id = Column(Integer, primary_key=True)
-    user_from_id = Column(Integer, primary_key=True)
+#    user_from_id = Column(Integer, primary_key=True)
     user_to_id = Column(Integer)
     user_id = Column(ForeignKey("user.id"))
 
